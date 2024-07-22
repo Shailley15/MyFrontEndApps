@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Register Yourself</title>
+</head>
+<body bgcolor="bisque"> 
+    
+    <h2 align="center"><i><u>Register Yourself For Interview </u></i><b></b></h2>
+    <form action="register.jsp" enctype="multipart/form.data"action="imghandler.jsp" method="get">
+        <u>Personal Deatils :</u><br><br>
+        <label for="fname">First Name: </label><input type="text"id="fname"size="25" name="name">
+        <label for="lname">Last Name:</label><input type="text"id="lname"size="25" name="name"><br><br>
+        Gender:
+        <input type="radio" name="gender"value="Male"/>Male
+       <input type="radio" name="gender"value="Female"/>Female<br><br>
+        <label for="userage">Your Age:</label><input type="number"id="userage"/><br><br>
+        <label for="mydate">Date Of Birth:</label><input type="date" id="mydate" name="birthday"/>
+        <input type="Submit" value="Select D.O.B."/><br><br>
+         <label for="contactno">Contact No:</label><input type="text" maxlength="10"id="contactno" />
+        <label type="youremail">Enter Email:</label><input type="email"id="youremail" required/><br><br>
+        <label for="city">Current City:</label><input type="text"id="city"size="25" name="name"><br><br>
+        State:
+        <select name="states">
+            <optgroup label="STATES">
+                <option>MP</option>
+                <option>CG</option>
+                <option>GJ</option>
+                <option>RJ</option>
+                <option>UP</option>
+            </optgroup>
+             <optgroup label="UT">
+            <option>A&N</option>
+            <option>Puduchery</option>
+            <option> Dadra and Nagar Haveli</option>
+            <option>Daman and Diu</option>
+            <option>Delhi</option>
+            <optgroup>
+
+            </optgroup>
+           
+        </select>
+        <hr/>
+
+       <u> Qualificational Details:</u><br><br>
+        <label for="qulaification">Qulaification: </label><input type="text"id="qulaification"><br/><br/>
+
+        Select the languages you know:<br/>
+        <label type="lang1"></label><input type="checkbox"name="lang1"/>C/C++ <br/>
+        <label type="lang2"></label><input type="checkbox"name="lang2"/>J2SEa<br/>
+        <label type="lang3"></label><input type="checkbox"name="lang3"/>J2EE<br/>
+        <label type="lang4"></label><input type="checkbox"name="lang4"/>ReactNative<br/><br/>
+
+        How much experience do u have ?<br>
+       <input type="radio" name="exp"value="Fresher"/>Fresher<br>
+       <input type="radio" name="exp"value="One Year"/>One Year<br>
+       <input type="radio" name="exp"value="More than 1 year"/>More than 1 year<br/><br/>
+       Upload CV :
+       <input type="file"name=uploaded-file/>
+       <br/><br/>
+       
+       <label for="hire">Tell Us Why Should I hire U ?</label><textarea name="hire" id="hire"></textarea><br><br>
+       <label type="lang1"></label><input type="checkbox"name="checkbox1"checked/>All the information given by me is correct.<br/><br>
+       <input type="submit"value="Submit">
+       <input type="reset"value="Reset">
+
+
+    </form>
+    
+    
+</body>
+</html>
